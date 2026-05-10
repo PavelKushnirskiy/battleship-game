@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy – Battleship from Childhood</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Fredoka+One&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #0f2d5e;
+      --ocean: #1565c0;
+      --wave: #42a5f5;
+      --sky: #e3f2fd;
+      --white: #ffffff;
+      --text: #1a2e4a;
+      --muted: #546e8a;
+      --accent: #ff6b35;
+      --green: #2e7d32;
+    }
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: var(--sky);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    /* WAVES HEADER */
+    header {
+      background: linear-gradient(160deg, var(--navy) 0%, var(--ocean) 100%);
+      color: white;
+      padding: 48px 24px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '🚢';
+      font-size: 64px;
+      display: block;
+      margin-bottom: 12px;
+      animation: bob 3s ease-in-out infinite;
+    }
+
+    @keyframes bob {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    header h1 {
+      font-family: 'Fredoka One', cursive;
+      font-size: clamp(28px, 5vw, 48px);
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 15px;
+      opacity: 0.8;
+      font-weight: 600;
+    }
+
+    .wave-divider {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 50px;
+      overflow: hidden;
+    }
+    .wave-divider svg { display: block; }
+
+    /* MAIN CONTENT */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--green);
+      color: white;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 8px 16px;
+      border-radius: 100px;
+      margin-bottom: 32px;
+      letter-spacing: 0.5px;
+    }
+
+    .intro-card {
+      background: white;
+      border-radius: 20px;
+      padding: 28px;
+      margin-bottom: 28px;
+      border-left: 5px solid var(--wave);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    }
+
+    .intro-card p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--muted);
+    }
+
+    .intro-card strong {
+      color: var(--navy);
+    }
+
+    /* HIGHLIGHT BOX */
+    .highlight {
+      background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+      border: 2px solid #81c784;
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin-bottom: 28px;
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--green);
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .highlight .icon { font-size: 28px; flex-shrink: 0; }
+
+    /* SECTIONS */
+    section {
+      background: white;
+      border-radius: 20px;
+      padding: 28px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+
+    section h2 {
+      font-family: 'Fredoka One', cursive;
+      font-size: 22px;
+      color: var(--navy);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    section h2 .icon { font-size: 24px; }
+
+    section p, section li {
+      font-size: 15px;
+      line-height: 1.75;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    section ul {
+      padding-left: 20px;
+    }
+
+    section ul li::marker { color: var(--wave); }
+
+    .contact-box {
+      background: linear-gradient(135deg, var(--navy), var(--ocean));
+      color: white;
+      border-radius: 20px;
+      padding: 28px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .contact-box h2 {
+      font-family: 'Fredoka One', cursive;
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .contact-box p {
+      font-size: 15px;
+      opacity: 0.85;
+      line-height: 1.7;
+      margin-bottom: 10px;
+    }
+
+    .contact-box a {
+      color: var(--wave);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .effective-date {
+      text-align: center;
+      font-size: 13px;
+      color: var(--muted);
+      padding-top: 20px;
+      font-weight: 600;
+    }
+
+    @media (max-width: 480px) {
+      section { padding: 20px; }
+      header { padding: 36px 16px 70px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Privacy Policy</h1>
+  <p>Battleship from Childhood &nbsp;·&nbsp; by KUSHNIRSKIY sp z o.o.</p>
+  <div class="wave-divider">
+    <svg viewBox="0 0 1200 50" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" width="100%" height="50">
+      <path d="M0,30 C200,55 400,5 600,30 C800,55 1000,5 1200,30 L1200,50 L0,50 Z" fill="#e3f2fd"/>
+    </svg>
+  </div>
+</header>
+
+<main>
+
+  <div class="badge">
+    <span>✅</span> COPPA Compliant — Children Under 13
+  </div>
+
+  <div class="intro-card">
+    <p>
+      This Privacy Policy describes how <strong>KUSHNIRSKIY sp z o.o.</strong> ("we," "our," or "us") handles information in connection with the mobile game <strong>Battleship from Childhood</strong> (the "App"). We are committed to protecting the privacy of all users, especially children.
+    </p>
+  </div>
+
+  <div class="highlight">
+    <span class="icon">🛡️</span>
+    <div>
+      <strong>We do NOT collect any personal information.</strong><br>
+      Battleship from Childhood works fully offline and does not collect, store, share, or transmit any personal data from any user, including children under the age of 13.
+    </div>
+  </div>
+
+  <section>
+    <h2><span class="icon">📋</span> Information We Collect</h2>
+    <p>We do <strong>not</strong> collect any information from users of this App. Specifically, we do not collect:</p>
+    <ul>
+      <li>Names, email addresses, or contact information</li>
+      <li>Location data of any kind</li>
+      <li>Device identifiers or advertising IDs</li>
+      <li>Photos, videos, or microphone data</li>
+      <li>Usage analytics or behavioral data</li>
+      <li>Any personal information from children under 13</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="icon">👶</span> Children's Privacy (COPPA)</h2>
+    <p>
+      Our App is designed for children and we take their privacy very seriously. In compliance with the <strong>Children's Online Privacy Protection Act (COPPA)</strong>:
+    </p>
+    <ul>
+      <li>We do <strong>not</strong> knowingly collect personal information from children under the age of 13.</li>
+      <li>We do <strong>not</strong> require registration or account creation to play the game.</li>
+      <li>We do <strong>not</strong> display third-party advertisements.</li>
+      <li>We do <strong>not</strong> include any social features, chat, or user-generated content.</li>
+      <li>The App functions entirely offline with no internet connection required.</li>
+    </ul>
+    <p style="margin-top: 12px;">
+      If you are a parent or guardian and believe we have inadvertently collected information from your child, please contact us immediately using the information below and we will delete it promptly.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="icon">📡</span> Internet & Third-Party Services</h2>
+    <p>
+      Battleship from Childhood does <strong>not</strong> require an internet connection and does <strong>not</strong> connect to any servers, third-party services, analytics platforms, or advertising networks.
+    </p>
+    <p>No data is sent to or received from any external service at any time.</p>
+  </section>
+
+  <section>
+    <h2><span class="icon">🔒</span> Data Security</h2>
+    <p>
+      Since no personal data is collected, there is no personal data at risk. The App stores only local game progress on your device (such as scores), which never leaves your device and is not accessible by us.
+    </p>
+  </section>
+
+  <section>
+    <h2><span class="icon">👨‍👩‍👧</span> For Parents & Guardians</h2>
+    <p>
+      We encourage parents to be involved in their children's digital activities. This App was designed to be a safe, fun, and completely private experience. You can let your child play with full confidence that:
+    </p>
+    <ul>
+      <li>No personal data is ever collected</li>
+      <li>No account or sign-up is needed</li>
+      <li>No in-app purchases are required</li>
+      <li>No ads are shown</li>
+      <li>No internet access is used during gameplay</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2><span class="icon">📝</span> Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Any changes will be reflected on this page with an updated effective date. We encourage you to review this policy periodically. Continued use of the App after any changes constitutes acceptance of the new policy.
+    </p>
+  </section>
+
+  <div class="contact-box">
+    <h2>📬 Contact Us</h2>
+    <p>If you have any questions about this Privacy Policy, or if you are a parent or guardian with concerns about your child's privacy, please contact us:</p>
+    <p><strong>Developer:</strong> KUSHNIRSKIY sp z o.o.</p>
+    <p><strong>App:</strong> Battleship from Childhood</p>
+    <p>
+      Please reach out via the Google Play Store developer contact page or email us at:<br>
+      <a href="mailto:kushnirskiyk@gmail.com">kushnirskiyk@gmail.com</a>
+    </p>
+  </div>
+
+  <p class="effective-date">Effective Date: May 8, 2026 &nbsp;·&nbsp; Last Updated: May 8, 2026</p>
+
+</main>
+
+</body>
+</html>
